@@ -1,0 +1,10 @@
+F:\Project\Study\EffectiveC_Series\Sample\EffectiveC\EffectiveC\obj\Debug\EffectiveC.csproj.CoreCompileInputs.cache
+F:\Project\Study\EffectiveC_Series\Sample\EffectiveC\EffectiveC\bin\Debug\EffectiveC.exe.config
+F:\Project\Study\EffectiveC_Series\Sample\EffectiveC\EffectiveC\bin\Debug\EffectiveC.exe
+F:\Project\Study\EffectiveC_Series\Sample\EffectiveC\EffectiveC\bin\Debug\EffectiveC.pdb
+F:\Project\Study\EffectiveC_Series\Sample\EffectiveC\EffectiveC\bin\Debug\EffectiveC_Library.dll
+F:\Project\Study\EffectiveC_Series\Sample\EffectiveC\EffectiveC\bin\Debug\EffectiveC_Library.pdb
+F:\Project\Study\EffectiveC_Series\Sample\EffectiveC\EffectiveC\obj\Debug\EffectiveC.csproj.CopyComplete
+F:\Project\Study\EffectiveC_Series\Sample\EffectiveC\EffectiveC\obj\Debug\EffectiveC.exe
+F:\Project\Study\EffectiveC_Series\Sample\EffectiveC\EffectiveC\obj\Debug\EffectiveC.pdb
+F:\Project\Study\EffectiveC_Series\Sample\EffectiveC\EffectiveC\obj\Debug\EffectiveC.csproj.AssemblyReference.cache
