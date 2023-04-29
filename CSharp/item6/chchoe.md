@@ -30,7 +30,9 @@ public string Name
         if(value != name)
         {
             name = value;
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Name))); //여기 주목
+            PropertyChanged?.Invoke(
+                this, 
+                new PropertyChangedEventArgs( nameof(Name) )); //여기 주목
         }
     }
 }
@@ -42,8 +44,71 @@ nameof() 연산자를 사용 했기 때문에 속성의 이름이 변경할 경�
 nameof()는 심볼의 이름을 평가, 타입, 변수, 인터페이스, 네임스페이스 에도 사용 가능
 (예시 코드 넣을 것)
 
+-----------------
+
 제네릭 타입 사용 시 부분 제약 사항이 있음!  
 - 모든 타입 매개변수를 지정한 닫힌 제네릭 타입만 사용 가능
+
+**열린 제니릭 타입이란?**
+
+아래 코드 처럼 타입이 정해지지 않은 상태
+```c#
+class Item<TKey, TValue>
+{
+    public Item(TKey key, TValue value)
+    {
+        _key = key;
+        _value = value;
+    }
+
+    private TKey _key;
+    private TValue _value;
+}
+```
+
+닫힌 제네릭 타입이란?
+
+
+
+
+nameof() 연산자는 항상 로컬 이름을 문자열로 반환 (로컬 문자열??)  
+완전 정규화된 이름(예: System.Int.MaxValue)을 사용하더라도 항상 로컬 이름(MaxValue)을 반환함
+
+기본적인 활용 예는??
+
+
+또 다른 활용 예시
+
+예외 타입은 매개변수의 이름 자체를 생성자의 매개변수로 취함
+
+```c#
+public static void ExceptionMessage(object thisCantBeNull)
+{
+    if(thisCantBeNull == null)
+    {
+        throw new ArgumentNullException(
+            nameof(thisCantBeNull), 
+            "We told you this cant be null"
+        );
+    }
+}
+```
+
+특성의 매개변수로 문자열을 전달해야 하는 경우에도 nameof() 연산자를 (위치 인자, 명명된 인자 모두에 대해서) 사용 할 수 있음  
+
+경로 이름으로 네임스페이스 이름을 사용하는 것을 고려해 보는것도 좋음  
+
+nameof() 연산자를 사용하면 심볼의 이름을 완전히 바꾸거나 수정할 경우에도 쉽게 변경사항을 반영 할 수 있음.  
+
+가능한 한(문자화되지 않은 형태) 심볼을 유지할 수만 있다면 자동화 도구를 활용 할 수 있는 가능성이 높아짐  
+그로 인해 다른 도구를 사용하거나 개발자가 직업 내용을 눈으로 검토하는 것에 비해 오류 발견이 쉬움, 더 어려운 문제에 역량 집중 가능
+
+
+
+
+
+
+
 
 
 
