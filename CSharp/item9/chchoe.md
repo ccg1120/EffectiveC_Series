@@ -135,5 +135,12 @@ attendees[0].ToString() 여기서도 다른 복사본이 생성됨
 이로 인해 버그가 발생 할 수 있으며 값 타입을 다형적으러 처리하는 과정에서 성능을 느리게 할 수 있음을 인지 해야함
 
 
+[Boxing 및 Unboxing](https://learn.microsoft.com/ko-kr/dotnet/csharp/programming-guide/types/boxing-and-unboxing)
+
+[Boxing 및 Unboxing 성능](https://learn.microsoft.com/ko-kr/dotnet/framework/performance/performance-tips)
+
+[값 타입에 ref 는?](https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/ref)
+
+
 
 
